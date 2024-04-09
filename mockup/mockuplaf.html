@@ -143,6 +143,49 @@ color: black;
   transition: background 500ms;
 }
 
+.header-eight {
+  position: relative;
+  padding:50px 0 100px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-eight {
+    padding: 130px 0 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-eight {
+    padding: 100px 0 60px 0;
+  }
+}
+.header-eight .header-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .header-eight .header-image {
+    margin-top: 40px;
+  }
+}
+.header-eight .header-content {
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-eight .header-content h1  {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .header-eight .header-content h1  {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
 
 
   .marie {
@@ -178,6 +221,32 @@ font-size:3rem;}}
       </div>
     </nav>
 <!-- End of navbar html -->
+
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="arts.png" alt="#" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1><span>a reflection and response for public art </span></h1>
+            <p>
+              We are a digital agency that helps brands to achieve their
+              business outcomes. We see technology as a tool to create amazing
+              things.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+
  <!-- Start of Home html -->
 
 <section class="hbd-section pic-section mb-5" id="home-section">
@@ -214,4 +283,4 @@ font-size:3rem;}}
         });
 </script>
 </body>
-</html>
+</html> 
